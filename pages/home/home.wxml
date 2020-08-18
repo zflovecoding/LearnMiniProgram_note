@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml--> 
+<view>你好，微信</view>
+<!--2.第二种获取用户信息的方式-->
+<button size='mini' 
+      open-type='getUserInfo'
+      bindgetuserinfo='handleGetUserInfo'>
+获取授权
+</button>
 
+<!--3.第三种：展示用户信息的方式-->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+
+<!--下面是注册Page相关知识-->
+<view bindtap="handleViewClick">{{message}}</view>
